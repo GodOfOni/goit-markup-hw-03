@@ -54,12 +54,14 @@ body {
   font-size: 26px;
   line-height: 1.19;
   text-decoration: none;
+  padding-left: 94px;
 }
 header .logo {
   color: var(--blue-color);
 }
 footer .logo {
   color: var(--blue-color);
+  padding-left: 0px;
 }
 footer .logo span {
   color: #fff;
@@ -152,8 +154,10 @@ footer .logo span {
   margin-top: 4px;
 }
 .filter-button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.63;
+  font-weight: 500;
   text-align: center;
   letter-spacing: 0.03em;
   width: 121px;
@@ -180,14 +184,17 @@ footer .logo span {
 }
 .bottom {
   background-color: var(--dark-background-color);
+  padding-left: 215px;
 }
 .main-header-box {
   background-color: var(--dark-background-color);
 }
 
 .container {
-  width: 1200px;
+  width: auto;
   margin: 0 auto;
+  padding-bottom: 94px;
+  padding-top: 94px;
 }
 .top-bar {
   border-bottom: 1px solid var(--top-bar-line);
