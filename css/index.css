@@ -270,7 +270,7 @@ footer .logo span {
   list-style: none;
   margin-top: 20px;
 }
-.bottom-adress-list li + li {
+.bottom-adress-list {
   margin-top: 9px;
 }
 .filter-button-list {
