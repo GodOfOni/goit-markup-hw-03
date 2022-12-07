@@ -195,6 +195,8 @@ footer .logo span {
   margin: 0 auto;
   padding-bottom: 94px;
   padding-top: 94px;
+  padding-left: 215px;
+  padding-right: 215px;
 }
 .top-bar {
   border-bottom: 1px solid var(--top-bar-line);
