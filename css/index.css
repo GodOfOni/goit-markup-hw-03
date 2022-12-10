@@ -31,6 +31,7 @@ body {
 .top-bar .navigation a {
   color: var(--black-color);
 }
+
 .contact a {
   color: var(--gray-color);
   text-decoration: none;
@@ -55,16 +56,18 @@ body {
   line-height: 1.19;
   text-decoration: none;
   padding-left: 94px;
+  display: flex;
+  margin-right: 94px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
+
 header .logo {
   color: var(--blue-color);
 }
 footer .logo {
   color: var(--blue-color);
   padding-left: 0px;
-}
-footer .logo span {
-  color: #fff;
 }
 
 .bottom-adress {
@@ -122,6 +125,11 @@ footer .logo span {
   line-height: 1.4;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 94px;
+}
+.business-team-section {
+  padding-top: 188px;
+  padding-bottom: 94px;
 }
 .business-description-paragraph {
   line-height: 1.71;
@@ -191,10 +199,8 @@ footer .logo span {
 }
 
 .container {
-  width: 1200px;
   margin: 0 auto;
-  padding-bottom: 94px;
-  padding-top: 94px;
+  width: 1200px;
 }
 .top-bar {
   border-bottom: 1px solid var(--top-bar-line);
@@ -204,22 +210,31 @@ footer .logo span {
   align-items: center;
   padding: 32px 0;
 }
+.container-main {
+  justify-content: space-between;
+  display: flex;
+  margin-right: 345px;
+  text-align: center;
+}
 
 .navigation {
-  justify-content: space-between;
-  padding: 24px 0 25px;
+  font-family: "roboto" sans-serif;
+  font-weight: 500;
 }
 .navigation-links {
   display: flex;
   list-style: none;
   gap: 46px;
-  justify-content: space-between;
-  padding: 24px 0 25px;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 .contact {
-  justify-content: space-between;
   display: flex;
   gap: 50px;
+  justify-content: space-between;
+  margin-right: 32px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 .main-header-box .container {
   padding: 200px 0;
@@ -228,13 +243,10 @@ footer .logo span {
   align-items: center;
   gap: 30px;
 }
-
 .business-description-header {
   margin-bottom: 10px;
 }
-.section {
-  padding: 94px 0;
-}
+
 .business-description-list,
 .business-activities-list,
 .business-team-list,
@@ -244,6 +256,14 @@ footer .logo span {
   list-style: none;
   gap: 30px;
   justify-content: center;
+}
+.business-activities-list,
+.business-team {
+  object-fit: cover;
+}
+
+.filter-button-list {
+  padding-top: 94px;
 }
 .business-activities .second-header {
   padding-top: 94px;
@@ -256,6 +276,7 @@ footer .logo span {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  object-fit: cover;
 }
 .employee-profile figcaption {
   padding: 30px 0;
@@ -269,6 +290,12 @@ footer .logo span {
 .bottom .logo {
   margin-bottom: 20px;
 }
+footer .logo {
+  padding-top: 60;
+  padding-right: 1240;
+  padding-bottom: 161;
+}
+
 .bottom-adress-list {
   list-style: none;
   margin-top: 20px;
@@ -281,6 +308,7 @@ footer .logo span {
 }
 .portfolio-list {
   flex-wrap: wrap;
+  padding-bottom: 94px;
 }
 
 .portfolio-list figcaption {
