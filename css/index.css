@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
   color: #212121;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 .container {
   width: 1200px;
   margin: 0 auto;
@@ -50,6 +54,20 @@ ul,
   justify-content: space-between;
   padding: 24px 0 25px;
 }
+.box-footer {
+  display: flex;
+}
+.contact-list-icons {
+  display: flex;
+  fill: currentColor;
+  margin-right: 10px;
+}
+.contact-list-icons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 .page-header {
   border-bottom: 1px solid #ececec;
 }
@@ -92,6 +110,13 @@ ul,
 }
 .section-header {
   background-color: var(--background-dark-grey);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/Header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .header-first {
   font-size: 44px;
@@ -104,6 +129,17 @@ ul,
   text-align: center;
   margin: 0 auto;
   padding-top: 106px;
+}
+.header-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  margin-top: 72px;
+  margin-left: 70px;
 }
 .button-studio {
   font-size: 16px;
@@ -177,9 +213,7 @@ button {
   letter-spacing: 0.03em;
   color: var(--text-grey);
 }
-.section-about {
-  margin-top: -94px;
-}
+
 .about-list {
   display: flex;
   justify-content: space-between;
@@ -230,7 +264,8 @@ button {
 }
 
 .product {
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 400;
   line-height: 1.9;
   letter-spacing: 0.03em;
   color: var(--text-grey);
@@ -242,10 +277,11 @@ button {
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-between;
-  margin-top: -128px;
+}
+.portfolio-list li:not(:last-child) {
+  width: 380px;
 }
 .card-portfolio {
-  border: 1px solid #eeeeee;
   display: flex;
   flex-direction: column;
 }
@@ -258,6 +294,7 @@ button {
   display: flex;
   flex-direction: column;
   padding: 24px 20px;
+  border: 1px solid #eeeeee;
 }
 .section-footer {
   background-color: var(--background-dark-grey);
@@ -295,4 +332,80 @@ button {
 }
 .address a {
   padding-top: 9px;
+}
+.header-icons-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #fff;
+  display: flex;
+  margin-top: 72px;
+  margin-left: 70px;
+}
+.team-icons-box {
+  width: 206px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+}
+.team-icons {
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.team-icons:hover,
+.team-icons:focus {
+  background-color: #2196f3;
+  border-radius: 50%;
+  fill: #fff;
+  cursor: pointer;
+}
+.box-join {
+  width: 206px;
+  display: flex;
+  justify-content: space-between;
+  fill: #fff;
+  padding-top: 20px;
+  margin-left: 70px;
+}
+.icons-join {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons-client {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  fill: #afb1b8;
+}
+.icons-client:hover,
+.icons-client:focus {
+  fill: var(--button-blue);
+  border: 1px solid var(--button-blue);
+  cursor: pointer;
+  border-color: var(--button-blue);
+}
+.box-client {
+  display: flex;
+  justify-content: space-between;
+}
+.icons-join:hover,
+.icons-join:focus {
+  background-color: var(--button-blue);
+  cursor: pointer;
 }
