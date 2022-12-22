@@ -17,7 +17,12 @@ body {
 }
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
+}
+.container-box-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 15px 25px;
 }
 .section {
   padding: 94px 15px;
@@ -59,7 +64,6 @@ ul,
   display: flex;
   justify-content: space-between;
   padding: 24px 0 25px;
-  margin: 0 40px auto;
 }
 .box-footer {
   display: flex;
@@ -220,6 +224,7 @@ button {
   line-height: 1.1;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 30px;
 }
 .description-list p {
   font-size: 14px;
@@ -260,6 +265,15 @@ button {
 }
 .section-team {
   background-color: var(--background-light-grey);
+  padding-bottom: 94px;
+}
+.header-third {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-top: 94px;
 }
 
 .header-secondary {
@@ -268,7 +282,6 @@ button {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-top: 94px;
 }
 .profession {
   font-size: 16px;
@@ -365,21 +378,24 @@ button {
   justify-content: space-between;
   margin-top: 16px;
 }
+
 .team-icons {
   width: 44px;
   height: 44px;
-  fill: #afb1b8;
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
 }
+
 .team-icons:hover,
 .team-icons:focus {
   background-color: #2196f3;
   border-radius: 50%;
-  fill: #fff;
+  fill: white;
   cursor: pointer;
 }
+
 .box-join {
   width: 206px;
   display: flex;
